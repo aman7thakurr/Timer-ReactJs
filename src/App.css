@@ -1,0 +1,140 @@
+body {
+  padding: 0;
+}
+
+.App {
+  font-family: Helvetica, Arial, Sans-Serif;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.toolbox {
+  margin-bottom: 80px;
+}
+
+.timeCount {
+  display: flex;
+  align-items: center;
+  font-size: 160px;
+}
+
+.c-timer__btn-reset,
+.c-timer__btn-start,
+.c-timer__btn-pause {
+  font-size: 18px;
+  height: 100px;
+  line-height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  transition: color 0.3s ease;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.c-timer__btn-start {
+  background-color: #17a69d;
+}
+
+.c-timer__btn-pause {
+  background-color: #fb647f;
+}
+
+.c-timer__btn-reset {
+  background-color: #4387d0;
+}
+
+.c-timer__btn-pause:hover,
+.c-timer__btn-reset:hover,
+.c-timer__btn-start:hover {
+  background-color: black;
+}
+
+.progressbar {
+  background-color: #17a69d;
+  height: 32px;
+  width: 80%;
+}
+
+.c-timer__edit {
+  margin-left: 10px;
+  border: none;
+  color: #556bb5;
+  background: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.c-timer__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.totalTimeLeft {
+  margin-right: 290px;
+}
+
+.c-timer__title {
+  margin-bottom: 10px;
+  color: #556bb5;
+}
+
+.c-timer__add {
+  text-decoration: none;
+  color: #556bb5;
+}
+
+.timeLeft {
+  transition: color 0.3s ease;
+}
+
+.timeLeft:hover {
+  color: #556bb5;
+}
+
+.label {
+  margin-right: 10px;
+}
+
+.ip {
+  margin-right: 10px;
+  width: 50px;
+}
+
+.txt {
+  margin-right: 10px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Adjust layout for screens smaller than 600px */
+@media (max-width: 600px) {
+  .timeCount {
+    font-size: 80px;
+  }
+
+  .c-timer__btn-reset,
+  .c-timer__btn-start,
+  .c-timer__btn-pause {
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    font-size: 14px;
+  }
+
+  .progressbar {
+    width: 100%;
+  }
+
+  .totalTimeLeft {
+    margin-right: 10px;
+  }
+
+  .c-timer__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
